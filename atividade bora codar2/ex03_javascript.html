@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escreva um programa para ler 2 valores inteiros informados
+        pelo usuário e uma das seguintes operações a serem executadas
+        (codificada da seguinte forma: 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação).
+        O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos.
+    </h1>
+
+    <script>
+
+    let primeiroValor = parseInt(prompt("Digite o primeiro valor:"))
+    let segundoValor = parseInt(prompt("Digite o segundo valor"))
+                              
+    let operacao = prompt("Digite 1 para fazer uma adição, 2 para subtração, 3 para divisão e 4 para multiplicação: ")
+  
+    if (operacao == 1) {
+        var resultado = primeiroValor + segundoValor
+        document.write("<h2>" + primeiroValor + " + " + segundoValor + " = " + resultado + "</h2>") 
+    } else if (operacao == 2 ) {
+        var resultado = primeiroValor - segundoValor
+        document.write("<h2>" + primeiroValor + " - " + segundoValor + " = " + resultado + "</h2>")
+    } else if (operacao == 3 ) {
+        var resultado = primeiroValor / segundoValor
+        document.write("<h2>" + primeiroValor + " / " + segundoValor + " = " + resultado + "</h2>")
+    } else{
+        var resultado = primeiroValor * segundoValor
+        document.write("<h2>" + primeiroValor + " * " + segundoValor + " = " + resultado + "</h2>")
+    }    
+    </script>
+
+</body>
+</html>

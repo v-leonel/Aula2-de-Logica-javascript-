@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> As maçãs custam R$ 3,50 cada se forem compradas menos do que uma dúzia,
+        e R$ 2,50 se forem compradas pelo menos doze. Escreva um programa que leia
+        o número de maçãs compradas (considere que o usuário informará a quantidade), 
+        calcule e escreva o valor total da compra.
+    </h1>
+
+    <script>
+
+        let quantidade = parseInt(prompt("Quantas maçãs você deseja comprar? "));
+        let valor = quantidade <12 ? 3.50 * quantidade : 2.50 * quantidade;
+
+        document.write("Sua compra deu um total de: " + valor + "R$")
+        
+    </script>
+
+</body>
+</html>

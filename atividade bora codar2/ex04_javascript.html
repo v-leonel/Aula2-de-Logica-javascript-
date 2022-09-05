@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escreva um programa para ler o número de lados de
+        um polígono regular e a medida do lado (em cm).
+    </h1>
+
+    <script>
+
+        let lados = parseInt(prompt("Quantos lados tem a figura? "));
+        let cm = parseFloat(prompt("Quantos centimentros tem o "))
+        let area
+        switch (lados) {
+            case 3:
+                area = (cm * cm)/2;
+                document.write("Seu poligono regular é um " + "triangulo, área" + area)
+                break;
+                case 4:
+                area = (cm * cm);
+                document.write("Seu poligno é um " + "quadrado, de área" + area)
+                break;
+                case 5:
+                area = (cm * cm);
+                document.write("Seu poligono é um " + "pentagono" + area)
+                break;
+                default:
+                    document.write("Quantidade de lados invalida! ")
+                    break;
+        }
+        
+
+    </script>
+
+</body>
+</html>
